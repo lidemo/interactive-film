@@ -127,17 +127,15 @@
         let sessionLog = [];
         let currentNode = "intro";
         
-        // DOM elements
         const videoPlayer = document.getElementById("videoPlayer");
         const choiceContainer = document.getElementById("choiceContainer");
         const logToggle = document.getElementById("logToggle");
         const sessionLogDiv = document.getElementById("sessionLog");
         const logEntries = document.getElementById("logEntries");
         
-        // Initialize the experience
+        // Init
         loadNode(currentNode);
         
-        // Load a story node
         function loadNode(nodeId) {
             const node = storyGraph[nodeId];
             
@@ -145,30 +143,25 @@
             videoPlayer.src = node.videoSrc;
             videoPlayer.load();
             
-            // Play video
             videoPlayer.play();
             
             // Hide choices during video playback
             choiceContainer.style.display = "none";
             
-            // When video ends, show choices or ending
+            // Video ends, show choices or ending
             videoPlayer.onended = function() {
                 if (node.ending) {
-                    // This is an ending node
                     showEnding(node.ending);
                 } else {
-                    // Show choices for this node
                     showChoices(node.choices);
                 }
             };
             
-            // Add to session log
             addToSessionLog(nodeId);
         }
         
         // Show choices for the current node
         function showChoices(choices) {
-            // Clear previous choices
             choiceContainer.innerHTML = "";
             
             // Add new choice buttons
@@ -183,7 +176,6 @@
                 choiceContainer.appendChild(button);
             });
             
-            // Display choices
             choiceContainer.style.display = "flex";
         }
         
@@ -217,7 +209,6 @@
             choiceContainer.appendChild(endingDiv);
             choiceContainer.style.display = "block";
             
-            // Log the ending
             addToSessionLog("ENDING: " + endingText);
         }
         
@@ -226,7 +217,7 @@
             const timestamp = new Date().toLocaleTimeString();
             let nodeName = nodeId;
             
-            // Make the node name more human-readable
+            // Make the node name more human-readable, refactor
             if (nodeId === "intro") {
                 nodeName = "Started the story";
             } else if (nodeId.startsWith("blue")) {
@@ -241,11 +232,9 @@
                 node: nodeName
             });
             
-            // Update session log display
             updateSessionLogDisplay();
         }
         
-        // Update the session log display
         function updateSessionLogDisplay() {
             logEntries.innerHTML = "";
             
@@ -257,7 +246,6 @@
             });
         }
         
-        // Toggle session log visibility
         logToggle.addEventListener("click", () => {
             if (sessionLogDiv.style.display === "none" || !sessionLogDiv.style.display) {
                 sessionLogDiv.style.display = "block";
