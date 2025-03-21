@@ -1,4 +1,5 @@
 import storyGraph from './storyGraph.js';
+import { visualizeStoryGraph } from './graphVisualize.js';
 
 // Session log to track user choices
 let sessionLog = [];
@@ -132,3 +133,4 @@ logToggle.addEventListener("click", () => {
         logToggle.textContent = "Show Session Log";
     }
 });
+
