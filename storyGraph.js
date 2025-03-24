@@ -60,8 +60,8 @@ export default {
         videoSrc: "files/5.mp4",
         choices: [
             {
-                text: "Use weapon",
-                nextNode: "redFightWeapon"
+                text: "Stare down agent",
+                nextNode: "redStareAgent"
             },
             {
                 text: "Hand-to-hand",
@@ -81,9 +81,9 @@ export default {
         videoSrc: "https://example.com/blue-home-sleep.mp4",
         ending: "You slept soundly, forgetting everything by morning."
     },
-    "redFightWeapon": {
-        videoSrc: "https://example.com/red-fight-weapon.mp4",
-        ending: "You defeated them with the weapon, becoming a legend."
+    "redStareAgent": {
+        videoSrc: "files/5.mp4",
+        ending: "You stare down the agent. The simulation collapses."
     },
     "redFightHands": {
         videoSrc: "https://example.com/red-fight-hands.mp4",
