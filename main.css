@@ -6,25 +6,30 @@ body {
     background-color: #0f0f0f;
     color: #ffffff;
 }
+
 .container {
     position: relative;
 }
+
 .video-container {
     position: relative;
     width: 100%;
     margin-bottom: 20px;
 }
+
 video {
     width: 100%;
     height: auto;
     display: block;
 }
+
 .choice-container {
     display: none;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
 }
+
 .choice-btn {
     padding: 12px 24px;
     background-color: #333;
@@ -35,9 +40,11 @@ video {
     font-size: 16px;
     transition: background-color 0.3s;
 }
+
 .choice-btn:hover {
     background-color: #555;
 }
+
 .session-log {
     margin-top: 30px;
     padding: 15px;
@@ -45,11 +52,13 @@ video {
     border-radius: 4px;
     display: none;
 }
+
 .log-entry {
     margin-bottom: 8px;
     padding-bottom: 8px;
     border-bottom: 1px solid #333;
 }
+
 .log-toggle {
     background-color: #444;
     color: white;
@@ -59,3 +68,38 @@ video {
     cursor: pointer;
     margin-top: 20px;
 }
+
+.story-editor-nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.standard-btn {
+    display: flex;
+    justify-self: center;
+    gap: 1rem;
+    padding: 12px 24px;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #555;
+    }
+}
+
+.left-arrow {
+    width: 0;
+    height: 0;
+    margin-top: 0.15rem;
+    border-top: 0.4rem solid transparent;
+    border-bottom: 0.4rem solid transparent;
+    border-right: 0.4rem solid white; /* Arrow color */
+    display: inline-block;
+  }
