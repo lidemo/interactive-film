@@ -29,8 +29,8 @@ export default {
         videoSrc: "files/3.mp4",
         choices: [
             {
-                text: "Fight",
-                nextNode: "redFight"
+                text: "Stay",
+                nextNode: "redStay"
             },
             {
                 text: "Run",
@@ -56,7 +56,7 @@ export default {
         // Example of an ending node with no choices
         ending: "You lived a normal life, never knowing what could have been."
     },
-    "redFight": {
+    "redStay": {
         videoSrc: "files/5.mp4",
         choices: [
             {
@@ -64,8 +64,8 @@ export default {
                 nextNode: "redStareAgent"
             },
             {
-                text: "Hand-to-hand",
-                nextNode: "redFightHands"
+                text: "Delete Similation",
+                nextNode: "redDelete"
             }
         ]
     },
@@ -83,10 +83,10 @@ export default {
     },
     "redStareAgent": {
         videoSrc: "files/6.mp4",
-        ending: "You stare down the agent. The simulation collapses."
+        ending: "You stare down the agent. The simulation collapses. Well done."
     },
-    "redFightHands": {
-        videoSrc: "https://example.com/red-fight-hands.mp4",
+    "redDelete": {
+        videoSrc: "files/7.mp4",,
         ending: "You were outmatched, but gained their respect."
     }
 };
