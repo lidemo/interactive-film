@@ -70,7 +70,7 @@ export default {
         ]
     },
     "redRun": {
-        videoSrc: "https://example.com/red-run.mp4",
+        videoSrc: "files/4.mp4",
         ending: "You escaped, but they will always be looking for you."
     },
     "blueHomeCall": {
