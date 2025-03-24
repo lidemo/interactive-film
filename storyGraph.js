@@ -82,7 +82,7 @@ export default {
         ending: "You slept soundly, forgetting everything by morning."
     },
     "redStareAgent": {
-        videoSrc: "files/5.mp4",
+        videoSrc: "files/6.mp4",
         ending: "You stare down the agent. The simulation collapses."
     },
     "redFightHands": {
