@@ -86,7 +86,7 @@ export default {
         ending: "You stare down the agent. The simulation collapses. Well done."
     },
     "redDelete": {
-        videoSrc: "files/7.mp4",,
+        videoSrc: "files/7.mp4",
         ending: "You were outmatched, but gained their respect."
     }
 };
