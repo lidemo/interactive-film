@@ -87,6 +87,6 @@ export default {
     },
     "redDelete": {
         videoSrc: "files/7.mp4",
-        ending: "You were outmatched, but gained their respect."
+        ending: "You delete the simulation from the terminal."
     }
 };
