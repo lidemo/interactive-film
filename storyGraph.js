@@ -57,7 +57,7 @@ export default {
         ending: "You lived a normal life, never knowing what could have been."
     },
     "redFight": {
-        videoSrc: "https://example.com/red-fight.mp4",
+        videoSrc: "files/5.mp4",
         choices: [
             {
                 text: "Use weapon",
