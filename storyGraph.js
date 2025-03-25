@@ -18,12 +18,12 @@ export default {
         videoSrc: "files/2.mp4",
         choices: [
             {
-                text: "Go home",
-                nextNode: "blueHome"
+                text: "Go home call a friend",
+                nextNode: "blueHomeFriend"
             },
             {
                 text: "Go to work",
-                nextNode: "blueWork"
+                nextNode: "blueGoWork"
             }
         ]
     },
@@ -48,8 +48,8 @@ export default {
                 nextNode: "blueHomeCall"
             },
             {
-                text: "Go to sleep",
-                nextNode: "blueHomeSleep"
+                text: "Go home",
+                nextNode: "blueGoHome"
             }
         ]
     },
@@ -75,13 +75,13 @@ export default {
         videoSrc: "files/4.mp4",
         ending: "You escaped, but they will always be looking for you."
     },
-    "blueHomeCall": {
-        videoSrc: "https://example.com/blue-home-call.mp4",
+    "blueHomeFriend": {
+        videoSrc: "8.mp4",
         ending: "You shared your strange experience with a friend, who thought you were crazy."
     },
-    "blueHomeSleep": {
-        videoSrc: "https://example.com/blue-home-sleep.mp4",
-        ending: "You slept soundly, forgetting everything by morning."
+    "blueGoHome": {
+        videoSrc: "9.mp4",
+        ending: "You go home and carry on as normal."
     },
     "redStareAgent": {
         videoSrc: "files/6.mp4",
