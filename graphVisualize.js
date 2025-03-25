@@ -1,16 +1,15 @@
 function visualizeStoryGraph(storyGraph, containerId) {
     const container = document.getElementById(containerId);
     
-    // Create a canvas element
+    // Create canvas as dom element
     const canvas = document.createElement('canvas');
     canvas.width = container.clientWidth;
     canvas.height = 600;
     container.appendChild(canvas);
     const ctx = canvas.getContext('2d');
     
-    // Create node positions
     const nodes = {};
-    const levels = {}; // Organize nodes by level from intro
+    const levels = {}; // Levels start from intro
     
     // Calculate node levels with breadth-first traversal
     function calculateLevels() {
@@ -55,11 +54,9 @@ function visualizeStoryGraph(storyGraph, containerId) {
         });
     }
     
-    // Draw the graph
     function drawGraph() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         
-        // Draw edges first
         ctx.strokeStyle = '#666';
         ctx.lineWidth = 1;
         
@@ -82,18 +79,18 @@ function visualizeStoryGraph(storyGraph, containerId) {
         
         // Draw nodes
         Object.values(nodes).forEach(node => {
-            // Determine node color
+            // Node colors based on type of node
             let color = '#4285F4';
             if (node.id === 'intro') color = '#0F9D58';
             if (storyGraph[node.id].ending) color = '#DB4437';
             
-            // Draw node circle
+            // Draw nodes
             ctx.fillStyle = color;
             ctx.beginPath();
             ctx.arc(node.x, node.y, 10, 0, Math.PI * 2);
             ctx.fill();
             
-            // Draw node label
+            // Draw node text
             ctx.fillStyle = '#FFF';
             ctx.font = '12px Arial';
             ctx.textAlign = 'center';
@@ -111,11 +108,10 @@ function visualizeStoryGraph(storyGraph, containerId) {
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
         
-        // Check if a node was clicked
         for (const node of Object.values(nodes)) {
             const distance = Math.sqrt((node.x - x) ** 2 + (node.y - y) ** 2);
             if (distance <= 10) {
-                // Show node details
+                // Just alert the node json for now, this can be something more substantial
                 alert(`Node: ${node.id}\n${JSON.stringify(storyGraph[node.id], null, 2)}`);
                 break;
             }

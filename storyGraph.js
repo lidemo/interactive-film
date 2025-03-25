@@ -1,3 +1,5 @@
+// TODO: This can be a json file or a simple database
+
 export default {
     "intro": {
         videoSrc: "files/1.mp4",

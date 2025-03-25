@@ -1,7 +1,7 @@
 import storyGraph from './storyGraph.js';
 import { visualizeStoryGraph } from './graphVisualize.js';
 
-// Session log to track user choices
+// TODO: Change in-memory array to actual session storage? TODO: clear session log on end of replay of story
 let sessionLog = [];
 let currentNode = "intro";
 
@@ -20,7 +20,6 @@ function loadNode(nodeId) {
     // Update video source
     videoPlayer.src = node.videoSrc;
     videoPlayer.load();
-    
     videoPlayer.play();
     
     // Hide choices during video playback
