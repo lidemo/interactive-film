@@ -35,8 +35,8 @@ export default {
                 nextNode: "redStay"
             },
             {
-                text: "Run",
-                nextNode: "redRun"
+                text: "Run away",
+                nextNode: "redRunAway"
             }
         ]
     },
@@ -71,7 +71,7 @@ export default {
             }
         ]
     },
-    "redRun": {
+    "redRunAway": {
         // Ending node with no choices
         videoSrc: "files/4.mp4",
         ending: "You escaped, but they will always be looking for you."
