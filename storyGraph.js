@@ -6,7 +6,7 @@ export default {
         choices: [
             {
                 text: "Take the Blue pill",
-                nextNode: "bluePill"
+                nextNode: "blueCamping"
             },
             {
                 text: "Take the Red pill",
