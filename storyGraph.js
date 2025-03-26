@@ -81,7 +81,7 @@ export default {
         ending: "You shared your strange experience with a friend, who didn't believe you."
     },
     "blueHomeSleep": {
-        videoSrc: "https://example.com/blue-home-sleep.mp4",
+        videoSrc: "files/blueSleeping.mp4",
         ending: "You slept soundly, forgetting everything by morning."
     },
     "redStareAgent": {
