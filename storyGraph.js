@@ -5,17 +5,17 @@ export default {
         videoSrc: "files/intro.mp4",
         choices: [
             {
-                text: "Take the blue pill",
+                text: "Take the Blue pill",
                 nextNode: "bluePill"
             },
             {
-                text: "Take the red pill",
+                text: "Take the Red pill",
                 nextNode: "redPill"
             }
         ]
     },
     "bluePill": {
-        videoSrc: "files/2.mp4",
+        videoSrc: "files/blueCamping.mp4",
         choices: [
             {
                 text: "Go home",
@@ -54,7 +54,7 @@ export default {
         ]
     },
     "blueWork": {
-        videoSrc: "files/2.mp4",
+        videoSrc: "files/blueCamping.mp4",
         // Example of an ending node with no choices
         ending: "You lived a normal life, never knowing what could have been."
     },
