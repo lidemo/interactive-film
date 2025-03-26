@@ -10,7 +10,7 @@ export default {
             },
             {
                 text: "Take the Red pill",
-                nextNode: "redPill"
+                nextNode: "redReading"
             }
         ]
     },
@@ -27,8 +27,8 @@ export default {
             }
         ]
     },
-    "redPill": {
-        videoSrc: "files/3.mp4",
+    "redReading": {
+        videoSrc: "files/redReading.mp4",
         choices: [
             {
                 text: "Stay",
