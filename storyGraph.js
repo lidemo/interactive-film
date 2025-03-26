@@ -14,16 +14,16 @@ export default {
             }
         ]
     },
-    "bluePill": {
+    "blueCamping": {
         videoSrc: "files/blueCamping.mp4",
         choices: [
             {
                 text: "Go home",
-                nextNode: "blueHome"
+                nextNode: "blueGoingHome"
             },
             {
                 text: "Go to work",
-                nextNode: "blueWork"
+                nextNode: "blueWorking"
             }
         ]
     },
@@ -40,8 +40,8 @@ export default {
             }
         ]
     },
-    "blueHome": {
-        videoSrc: "files/1.mp4",
+    "blueGoingHome": {
+        videoSrc: "files/blueGoingHome.mp4",
         choices: [
             {
                 text: "Call friend",
@@ -53,10 +53,10 @@ export default {
             }
         ]
     },
-    "blueWork": {
-        videoSrc: "files/blueCamping.mp4",
-        // Example of an ending node with no choices
-        ending: "You lived a normal life, never knowing what could have been."
+    "blueWorking": {
+        // Ending node with no choices
+        videoSrc: "files/blueWorking.mp4",
+        ending: "You lived a normal work life, never knowing what could have been."
     },
     "redStay": {
         videoSrc: "files/5.mp4",
@@ -72,6 +72,7 @@ export default {
         ]
     },
     "redRun": {
+        // Ending node with no choices
         videoSrc: "files/4.mp4",
         ending: "You escaped, but they will always be looking for you."
     },
