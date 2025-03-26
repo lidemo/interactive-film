@@ -44,7 +44,7 @@ export default {
         videoSrc: "files/blueGoingHome.mp4",
         choices: [
             {
-                text: "Call friend",
+                text: "Call a friend",
                 nextNode: "blueHomeCall"
             },
             {
@@ -77,8 +77,8 @@ export default {
         ending: "You escaped, but they will always be looking for you."
     },
     "blueHomeCall": {
-        videoSrc: "https://example.com/blue-home-call.mp4",
-        ending: "You shared your strange experience with a friend, who thought you were crazy."
+        videoSrc: "files/blueHomeCall.mp4",
+        ending: "You shared your strange experience with a friend, who didn't believe you."
     },
     "blueHomeSleep": {
         videoSrc: "https://example.com/blue-home-sleep.mp4",
