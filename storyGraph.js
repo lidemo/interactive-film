@@ -56,7 +56,7 @@ export default {
     "blueWorking": {
         // Ending node with no choices
         videoSrc: "files/blueWorking.mp4",
-        ending: "You lived a normal work life, never knowing what could have been."
+        ending: "You lived a normal working life in the simulation."
     },
     "redStay": {
         videoSrc: "files/5.mp4",
@@ -66,7 +66,7 @@ export default {
                 nextNode: "redStareAgent"
             },
             {
-                text: "Delete Similation",
+                text: "Delete Simulation",
                 nextNode: "redDelete"
             }
         ]
