@@ -59,7 +59,7 @@ export default {
         ending: "You lived a normal working life in the simulation."
     },
     "redStay": {
-        videoSrc: "files/5.mp4",
+        videoSrc: "files/redStay.mp4",
         choices: [
             {
                 text: "Stare down agent",
