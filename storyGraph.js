@@ -1,8 +1,8 @@
 // TODO: This can be a json file or a simple database
 
 export default {
-    "intro": {
-        videoSrc: "files/1.mp4",
+    "Introduction": {
+        videoSrc: "files/intro.mp4",
         choices: [
             {
                 text: "Take the blue pill",
