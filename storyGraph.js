@@ -31,11 +31,11 @@ export default {
         videoSrc: "files/redReading.mp4",
         choices: [
             {
-                text: "Stay",
+                text: "Agent here, stay and confront",
                 nextNode: "redStay"
             },
             {
-                text: "Run away",
+                text: "Run away from agent",
                 nextNode: "redRunAway"
             }
         ]
@@ -73,7 +73,7 @@ export default {
     },
     "redRunAway": {
         // Ending node with no choices
-        videoSrc: "files/4.mp4",
+        videoSrc: "files/redRunning.mp4",
         ending: "You escaped, but they will always be looking for you."
     },
     "blueHomeCall": {
