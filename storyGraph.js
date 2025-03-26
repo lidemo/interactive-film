@@ -67,7 +67,7 @@ export default {
             },
             {
                 text: "Delete Simulation",
-                nextNode: "redDelete"
+                nextNode: "redDeleteSimulation"
             }
         ]
     },
@@ -88,7 +88,7 @@ export default {
         videoSrc: "files/6.mp4",
         ending: "You stare down the agent. The simulation collapses. Well done."
     },
-    "redDelete": {
+    "redDeleteSimulation": {
         videoSrc: "files/7.mp4",
         ending: "You delete the simulation from the terminal."
     }
