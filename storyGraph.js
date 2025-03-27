@@ -85,11 +85,11 @@ export default {
         ending: "You slept soundly, forgetting everything by morning."
     },
     "redStareAgent": {
-        videoSrc: "files/6.mp4",
+        videoSrc: "files/redStare.mp4",
         ending: "You stare down the agent. The simulation collapses. Well done."
     },
     "redDeleteSimulation": {
-        videoSrc: "files/7.mp4",
+        videoSrc: "files/redDeleteSimulation.mp4",
         ending: "You delete the simulation from the terminal."
     }
 };
