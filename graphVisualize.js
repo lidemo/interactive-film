@@ -13,9 +13,9 @@ function visualizeStoryGraph(storyGraph, containerId) {
     
     // Calculate node levels with breadth-first traversal
     function calculateLevels() {
-        levels[0] = ["intro"];
+        levels[0] = ["Introduction"];
         let currentLevel = 0;
-        const processed = new Set(["intro"]);
+        const processed = new Set(["Introduction"]);
         
         while (levels[currentLevel] && levels[currentLevel].length > 0) {
             levels[currentLevel + 1] = [];
@@ -81,7 +81,7 @@ function visualizeStoryGraph(storyGraph, containerId) {
         Object.values(nodes).forEach(node => {
             // Node colors based on type of node
             let color = '#4285F4';
-            if (node.id === 'intro') color = '#0F9D58';
+            if (node.id === 'Introduction') color = '#0F9D58';
             if (storyGraph[node.id].ending) color = '#DB4437';
             
             // Draw nodes

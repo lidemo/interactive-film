@@ -1,50 +1,50 @@
 // TODO: This can be a json file or a simple database
 
 export default {
-    "intro": {
-        videoSrc: "files/1.mp4",
+    "Introduction": {
+        videoSrc: "files/intro.mp4",
         choices: [
             {
-                text: "Take the blue pill",
-                nextNode: "bluePill"
+                text: "Take the Blue pill",
+                nextNode: "blueCamping"
             },
             {
-                text: "Take the red pill",
-                nextNode: "redPill"
+                text: "Take the Red pill",
+                nextNode: "redReading"
             }
         ]
     },
-    "bluePill": {
-        videoSrc: "files/2.mp4",
+    "blueCamping": {
+        videoSrc: "files/blueCamping.mp4",
         choices: [
             {
-                text: "Go home call a friend",
-                nextNode: "blueHomeFriend"
+                text: "Go home",
+                nextNode: "blueGoingHome"
             },
             {
                 text: "Go to work",
-                nextNode: "blueGoWork"
+                nextNode: "blueWorking"
             }
         ]
     },
-    "redPill": {
-        videoSrc: "files/3.mp4",
+    "redReading": {
+        videoSrc: "files/redReading.mp4",
         choices: [
             {
-                text: "Stay",
+                text: "Agent here, stay and confront",
                 nextNode: "redStay"
             },
             {
-                text: "Run",
-                nextNode: "redRun"
+                text: "Run away from agent",
+                nextNode: "redRunAway"
             }
         ]
     },
-    "blueHome": {
-        videoSrc: "files/1.mp4",
+    "blueGoingHome": {
+        videoSrc: "files/blueGoingHome.mp4",
         choices: [
             {
-                text: "Call friend",
+                text: "Call a friend",
                 nextNode: "blueHomeCall"
             },
             {
@@ -53,42 +53,43 @@ export default {
             }
         ]
     },
-    "blueWork": {
-        videoSrc: "files/2.mp4",
-        // Example of an ending node with no choices
-        ending: "You lived a normal life, never knowing what could have been."
+    "blueWorking": {
+        // Ending node with no choices
+        videoSrc: "files/blueWorking.mp4",
+        ending: "You lived a normal working life in the simulation."
     },
     "redStay": {
-        videoSrc: "files/5.mp4",
+        videoSrc: "files/redStay.mp4",
         choices: [
             {
                 text: "Stare down agent",
                 nextNode: "redStareAgent"
             },
             {
-                text: "Delete Similation",
-                nextNode: "redDelete"
+                text: "Delete Simulation",
+                nextNode: "redDeleteSimulation"
             }
         ]
     },
-    "redRun": {
-        videoSrc: "files/4.mp4",
+    "redRunAway": {
+        // Ending node with no choices
+        videoSrc: "files/redRunning.mp4",
         ending: "You escaped, but they will always be looking for you."
     },
-    "blueHomeFriend": {
-        videoSrc: "8.mp4",
-        ending: "You shared your strange experience with a friend, who thought you were crazy."
+    "blueHomeCall": {
+        videoSrc: "files/blueHomeCall.mp4",
+        ending: "You shared your strange experience with a friend, who didn't believe you."
     },
-    "blueGoHome": {
-        videoSrc: "9.mp4",
-        ending: "You go home and carry on as normal."
+    "blueHomeSleep": {
+        videoSrc: "files/blueSleeping.mp4",
+        ending: "You slept soundly, forgetting everything by morning."
     },
     "redStareAgent": {
-        videoSrc: "files/6.mp4",
+        videoSrc: "files/redStare.mp4",
         ending: "You stare down the agent. The simulation collapses. Well done."
     },
-    "redDelete": {
-        videoSrc: "files/7.mp4",
+    "redDeleteSimulation": {
+        videoSrc: "files/redDeleteSimulation.mp4",
         ending: "You delete the simulation from the terminal."
     }
 };

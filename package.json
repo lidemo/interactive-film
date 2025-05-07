@@ -1,7 +1,7 @@
 {
     "name": "interactive-film",
     "version": "1.0.0",
-    "description": "A simple interactive film project",
+    "description": "An interactive film prototype",
     "main": "index.js",
     "scripts": {
         "start": "node index.js",

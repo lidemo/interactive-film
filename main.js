@@ -3,7 +3,7 @@ import { visualizeStoryGraph } from './graphVisualize.js';
 
 // TODO: Change in-memory array to actual session storage? TODO: clear session log on end of replay of story
 let sessionLog = [];
-let currentNode = "intro";
+let currentNode = "Introduction";
 
 const videoPlayer = document.getElementById("videoPlayer");
 const choiceContainer = document.getElementById("choiceContainer");
@@ -78,7 +78,7 @@ function showEnding(endingText) {
     replayButton.className = "choice-btn";
     replayButton.textContent = "Play Again";
     replayButton.addEventListener("click", () => {
-        currentNode = "intro";
+        currentNode = "Introduction";
         loadNode(currentNode);
     });
     endingDiv.appendChild(replayButton);
@@ -95,7 +95,7 @@ function addToSessionLog(nodeId) {
     let nodeName = nodeId;
     
     // Make the node name more human-readable, refactor
-    if (nodeId === "intro") {
+    if (nodeId === "Introduction") {
         nodeName = "Started the story";
     } else if (nodeId.startsWith("blue")) {
         nodeName = "Chose the blue path: " + nodeId.replace("blue", "");
